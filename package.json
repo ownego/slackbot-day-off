@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "oetaitkt",
-  "license": "ISC",
+  "license": "oe",
   "repository": {
     "type": "git",
     "url": "https://github.com/vie02/oe-slack-hellobot.git"
@@ -15,5 +15,9 @@
   "dependencies": {
     "express": "^4.x.x",
     "body-parser": "^1.x.x"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/vie02/oe-slack-hellobot/issues"
+  },
+  "devDependencies": {}
 }
