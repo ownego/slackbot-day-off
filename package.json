@@ -13,8 +13,9 @@
     "url": "https://github.com/vie02/oe-slack-hellobot.git"
   },
   "dependencies": {
+    "body-parser": "^1.x.x",
     "express": "^4.x.x",
-    "body-parser": "^1.x.x"
+    "request": "^2.57.0"
   },
   "bugs": {
     "url": "https://github.com/vie02/oe-slack-hellobot/issues"
