@@ -3,7 +3,7 @@ module.exports = function (req, res, next) {
   var userName = req.body.user_name;
   var offDay = req.body.text;
   var botPayload = {
-    text : userName + 'nghi vao thu' + offDay
+    text : userName + ' dang ky nghi thu ' + offDay
   }
 
   // avoid infinite loop
