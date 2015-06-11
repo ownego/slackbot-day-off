@@ -38,9 +38,3 @@ app.use(function (err, req, res, next) {
 app.listen(port, function () {
   console.log('Slack bot listening on port ' + port);
 });
-
-
-var listOff = [];
-
-//console.log(listOff);
-//console.log('viet nam vo dich!');

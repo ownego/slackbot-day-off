@@ -18,13 +18,15 @@ listObj = {
 	},
 
 	addWeek: function(week) {
-		//gerenate id
+		//generate id
 		//set week
 	},
 
-	getData: function(user, day) {
-
+	addDay: function(user, day) {
 		listoff.push([user,day]);
+	},
+
+	getData: function() {
 		return listoff;
 	}
 }
