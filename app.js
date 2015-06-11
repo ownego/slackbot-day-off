@@ -2,6 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var hellobot = require('./hellobot');
 var offdaybot = require('./offdaybot');
+var viewlistoff = require('./viewlistoff');
 var dicebot = require('./dicebot');
 
 var app = express();
@@ -20,6 +21,9 @@ app.post('/hello', hellobot);
 // offdaybot
 app.post('/nghi', offdaybot);
 
+// viewlistoffbot
+app.post('/vl', viewlistoff);
+
 // dicebot
 app.post('/roll', dicebot);
 
@@ -34,3 +38,9 @@ app.use(function (err, req, res, next) {
 app.listen(port, function () {
   console.log('Slack bot listening on port ' + port);
 });
+
+
+var listOff = [];
+
+//console.log(listOff);
+//console.log('viet nam vo dich!');
