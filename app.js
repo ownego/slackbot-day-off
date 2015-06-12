@@ -19,10 +19,10 @@ app.get('/', function (req, res) { res.status(200).send('Hello world!') });
 app.post('/hello', hellobot);
 
 // offdaybot
-app.post('/nghi', offdaybot);
+app.post('/oe-setoffday', offdaybot);
 
 // viewlistoffbot
-app.post('/vl', viewlistoff);
+app.post('/oe-viewlistoff', viewlistoff);
 
 // dicebot
 app.post('/roll', dicebot);
