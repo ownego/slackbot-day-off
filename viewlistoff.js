@@ -1,13 +1,13 @@
-var listoff = require('./listoff');
+var listObj = require('./listObj');
 
 module.exports = function (req, res, next) {
  	var userName = req.body.user_name;
 	var botPayload = {
-		text : 'Danh sach nghi: ' + listoff.getData()
+		text : listObj.getData()
 	}
-	  // avoid infinite loop
+	// avoid infinite loop
 	if (userName !== 'slackbot') {
-	return res.status(200).json(botPayload);
+	return res.status(200).json(botPayload.text);
 	} else {
 	return res.status(200).end();
 	}
