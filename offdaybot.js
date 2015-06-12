@@ -10,7 +10,7 @@ module.exports = function (req, res, next) {
 
   if (today===5 || today===6) {
 
-    if ("234567".indexOf(offDay) === -1) {
+    if (offDay==="" || "234567".indexOf(offDay)===-1) {
       botPayload = {
         text : 'Xem lai cu phap! '
       }
